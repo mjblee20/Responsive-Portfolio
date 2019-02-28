@@ -263,6 +263,23 @@ No media query since this is the default in Bootstrap */
         width: 90%;
         min-height: 100%;
         margin: auto;
+        overflow: auto;
 
+    }
+    /* Portfolio section */
+
+    .hobby-containers {
+        width: 80%;
+    }
+    .hobbies {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 15%;
+        height: 40px;
+        background: #4aaaa5;
+        font-size: 30px;
+        vertical-align: middle;
+        color: #ffffff;
     }
 }
