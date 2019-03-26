@@ -115,6 +115,10 @@ body {
     font-size: 20px;
     color: white;
 }
+
+.card {
+    color: rgb(45, 75, 163, .85);
+}
 /* MEDIA QUERIES */
 
 /* Extra small devices (portrait phones, less than 576px)
