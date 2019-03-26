@@ -117,7 +117,7 @@ body {
 }
 
 .card {
-    color: rgb(45, 75, 163, .85);
+    background: rgb(45, 75, 163, .85);
 }
 /* MEDIA QUERIES */
 
