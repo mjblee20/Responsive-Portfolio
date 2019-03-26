@@ -28,11 +28,11 @@ body {
 }
 
 #title {
-    font-size: 32px;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding-top: auto;
     padding-bottom: auto;
-    vertical-align:middle;
+    vertical-align: middle;
 }
 
 #email {
@@ -48,10 +48,6 @@ body {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-.text {
-    color: white;
-}
-
 .customNav {
     display: block;
     font-family:'Georgia', Times, Times New Roman, serif;
@@ -64,6 +60,7 @@ body {
     color: #777777;
     background: gray;
     border-radius: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .logo {
@@ -111,9 +108,13 @@ body {
 }
 
 .jumbotron {
-    background: rgb(52, 55, 61, .70);
+    background: rgb(52, 55, 61, .85);
 }
 
+.text {
+    font-size: 20px;
+    color: white;
+}
 /* MEDIA QUERIES */
 
 /* Extra small devices (portrait phones, less than 576px)
