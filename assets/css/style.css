@@ -1,3 +1,4 @@
+/* 
 /* index.html section including header and footer */
 * {
     box-sizing: border-box;
@@ -8,131 +9,81 @@
     box-sizing: inherit;
 }
 
-html {
-    height: 100%;
-    box-sizing: border-box;
-}
-
 /* url syntax  */
 body {
     position: relative;
-    background-image: url("../images/prism/prism.png"); 
-    background-color: #999999;
+    background-color: #145671;
+    background-image: url("https://source.unsplash.com/featured/?house");
+    background-blend-mode: hard-light;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: auto;
     padding-bottom: 100px;
     min-height: 100%;
 }
 
-
-header {
-    background-color: #ffffff;
-    border-bottom: 2px solid #cccccc;
-    margin: 0px 0px 50px 0px;
-    top:0;
+.pageTitle {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-main {
-    background-color: #ffffff;
-    border: 2px solid #dddddd;
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 35px;
-    min-height: 100%;
-}
-
-footer {
-    background: #666666;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-top: 50px;
-    border-top: 10px solid #4aaaa5;
-    padding-top: auto;
-    height: 50px;
-    color: #ffffff;
-    vertical-align: bottom;
-}
-
-#copyright {
-    position: absolute;
-    font-size: 12px;
-    vertical-align: bottom;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 10%;
-}
-
-h2, h3 {
-    margin: 0px 0px 30px 0px;
+#title {
+    font-size: 32px;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    color: #4aaaa5;
+    padding-top: auto;
+    padding-bottom: auto;
+    vertical-align:middle;
 }
 
-h1 {
-    
+#email {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:white;
+}   
+
+#myEmail {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-h1 a {
+.text {
+    color: white;
+}
+
+.customNav {
     display: block;
     font-family:'Georgia', Times, Times New Roman, serif;
     color: #ffffff;
 }
 
-hr {
-    color: #777777;
-}
-
-a {
+.links {
     padding:10px;
     text-decoration: none;
     color: #777777;
+    background: gray;
+    border-radius: 30px;
 }
 
-a:visited {
+.logo {
+    color:white;
+}
+
+.logoImg {
+    height: 60px;
+    width: 60px;
+    background: white;
+    border-radius: 60px;
+}
+
+.customNav:visited {
     text-decoration: none;
 }
 
-a:hover {
+.customNav:hover {
     background-color: #555;
     color: white;
-}
-
-#navBar {
-    display: block;
-    justify-content: flex-end;
-    margin-right:0;
-    margin-top:auto;
-    margin-bottom:auto;
-    font-size: 24px;
-}
-
-.main-container {
-    padding-top: 15px;
-    overflow: auto;
-}
-
-#block {
-    display: flex;
-    width: 960px;
-    justify-content: space-between;
-    margin:auto;
-    flex-flow: wrap;
-}
-
-#homepage {
-    height: 100%;
-    background-color: #4aaaa5;
-    vertical-align: middle;
-    top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 #selfie {
@@ -141,11 +92,8 @@ a:hover {
     overflow: auto;
     width: auto;
     height: 200px;
+    border: 5px;
 }
-
-
-
-
 
 /* contact.html section */
 #name, #email, #message {
@@ -162,61 +110,8 @@ a:hover {
     height: 150px;
 }
 
-/* portfolio.html section */
-.portfolio-container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-.hobby-containers {
-    position: relative;
-    height: 250px;
-    width: 250px;
-    background: lightgray;
-    margin: 20px;
-    background-size: contain;
-}
-
-.hobbies {
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 15%;
-    height: 40px;
-    background: #4aaaa5;
-    font-size: 30px;
-    vertical-align: middle;
-    color: #ffffff;
-}
-
-#hobby1 {
-    background-image: url("../images/kpop.jpeg"); 
-    background-repeat: no-repeat;
-    background-size: cover;    
-}
-
-#hobby2 {
-    background-image: url("../images/boardGames.jpeg"); 
-    background-repeat: no-repeat;
-    background-size: cover;    
-}
-
-#hobby3 {
-    background-image: url("../images/arduino.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover;    
-}
-
-#hobby4 {
-    background-image: url("../images/piano.jpeg"); 
-    background-repeat: no-repeat;
-    background-size: cover;    
-}
-
-#hobby5 {
-    background-image: url("../images/coffee.jpeg"); 
-    background-repeat: no-repeat;
-    background-size: cover;    
+.jumbotron {
+    background: rgb(52, 55, 61, .70);
 }
 
 /* MEDIA QUERIES */
@@ -225,11 +120,36 @@ a:hover {
 No media query since this is the default in Bootstrap */
 
 @media screen and (max-width: 980px) {
-
+    /* url syntax  */
+    body {
+        position: relative;
+        background-color: #145671;
+        background-image: url("https://source.unsplash.com/featured/?house");
+        background-blend-mode: hard-light;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        padding-bottom: 100px;
+        min-height: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-
+    /* url syntax  */
+    body {
+        position: relative;
+        background-color: #145671;
+        background-image: url("https://source.unsplash.com/featured/?house");
+        background-blend-mode: hard-light;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        padding-bottom: 100px;
+        min-height: 100%;
+    }
+    .link {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 640px) {
@@ -258,13 +178,8 @@ No media query since this is the default in Bootstrap */
         margin: 10px;
         
     }
-
-    main {
-        width: 90%;
-        min-height: 100%;
-        margin: auto;
-        overflow: auto;
-
+    .link {
+        font-size: 20px;
     }
     /* Portfolio section */
 
