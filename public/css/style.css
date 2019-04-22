@@ -55,6 +55,7 @@ body {
 }
 
 .links {
+    text-decoration: none;
     padding:10px;
     text-decoration: none;
     color: #777777;
@@ -64,6 +65,7 @@ body {
 }
 
 .logo {
+    text-decoration: none;
     color:white;
 }
 

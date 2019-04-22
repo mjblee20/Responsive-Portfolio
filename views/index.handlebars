@@ -1,7 +1,12 @@
 
+{{#if aboutme}}
+    {{> about/aboutme-block }}
+{{/if}}
 
+{{#if contact}}
+    {{> contact/contact-block }}
+{{/if}}
 
-
-{{> contact/contact-block }}
-
-{{> portfolio-block }}
+{{#if portfolio}}
+    {{> portfolio/portfolio-block }}
+{{/if}}
