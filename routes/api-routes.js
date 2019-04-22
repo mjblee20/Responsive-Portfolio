@@ -9,7 +9,7 @@ module.exports = function(app) {
         // Create a new Book in the database
         db.Book.create(req.body)
         .then(function(dbBook) {
-            // If a Book was created successfully, find one library (there's only one) and push the new Book's _id to the Library's `books` array
+            // If a Book was created successfully, find one library (there's only one) and push the new Book's _id to the Library's `books` arraygit@github.com:mjblee20/Responsive-Portfolio.git
             // { new: true } tells the query that we want it to return the updated Library -- it returns the original by default
             // Since our mongoose query returns a promise, we can chain another `.then` which receives the result of the query
             return db.Library.findOneAndUpdate({}, { $push: { books: dbBook._id } }, { new: true });
