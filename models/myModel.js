@@ -11,24 +11,21 @@ var UserSchema = new Schema({
   // `firstName` is a required field and throws a custom error message if not supplied
   firstName: {
     type: String,
-    trim: true,
-    required: "First Name is Required"
+    trim: true
   },
   // `lastName` must be of type String
   // `lastName` will trim leading and trailing whitespace before it's saved
   // `lastName` is a required field and throws a custom error message if not supplied
   lastName: {
     type: String,
-    trim: true,
-    required: "Last Name is Required"
+    trim: true
   },
   // `username` must be of type String
   // `username` will trim leading and trailing whitespace before it's saved
   // `username` is a required field and throws a custom error message if not supplied
   username: {
     type: String,
-    trim: true,
-    required: "Username is Required"
+    trim: true
   },
   // `password` must be of type String
   // `password` will trim leading and trailing whitespace before it's saved
